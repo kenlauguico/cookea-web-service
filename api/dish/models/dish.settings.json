@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dishes",
+  "info": {
+    "name": "dish"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "ingredients": {
+      "collection": "ingredient"
+    },
+    "tools": {
+      "collection": "tool"
+    },
+    "stages": {
+      "via": "dishes",
+      "collection": "stage",
+      "dominant": true
+    }
+  }
+}

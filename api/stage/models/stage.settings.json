@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stages",
+  "info": {
+    "name": "stage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "instructions": {
+      "type": "text"
+    },
+    "image": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "dishes": {
+      "collection": "dish",
+      "via": "stages"
+    },
+    "best": {
+      "type": "integer"
+    }
+  }
+}
