@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/stages",
+      "path": "/stage/add",
       "handler": "stage.create",
       "config": {
         "policies": []

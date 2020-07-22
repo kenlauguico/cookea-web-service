@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/tools",
+      "path": "/tool/add",
       "handler": "tool.create",
       "config": {
         "policies": []

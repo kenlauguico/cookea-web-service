@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/dishes",
+      "path": "/dish/add",
       "handler": "dish.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/dishes/:id",
+      "path": "/dish/update/:id",
       "handler": "dish.update",
       "config": {
         "policies": []
